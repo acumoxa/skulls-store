@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Checkbox } from '@/components/ui/checkbox'
+import { PlaceholderImage } from '@/components/ui/placeholder-image'
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -79,7 +80,7 @@ export function ContactForm() {
                 <Checkbox
                   id="terms"
                   checked={formData.acceptTerms}
-                  onCheckedChange={handleCheckboxChange}
+                  onChange={handleCheckboxChange}
                 />
                 <label
                   htmlFor="terms"
@@ -94,17 +95,10 @@ export function ContactForm() {
             </form>
           </div>
           <div className="relative h-[400px] md:h-auto">
-            <Image
-              src="/placeholder.svg?height=600&width=600"
-              alt="Colorful smartwatch"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
+            <PlaceholderImage width={600} height={600} />
           </div>
         </div>
       </div>
     </section>
   )
 }
-

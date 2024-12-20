@@ -1,32 +1,30 @@
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import { PlaceholderImage } from '@/components/ui/placeholder-image'
 
 export function FeaturedProductSection() {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container">
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="w-full md:w-1/2">
-            <Image
-              src="/placeholder.svg?height=600&width=600"
-              alt="Featured Product"
-              width={600}
-              height={600}
-              className="rounded-lg shadow-lg"
-            />
+    <section className="w-full py-12 md:py-24 lg:py-32">
+      <div className="container px-4 md:px-6">
+        <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+          <div className="flex flex-col justify-center space-y-4">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Featured Collection
+              </h2>
+              <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+                Explore our latest skull designs, handcrafted with precision and passion.
+              </p>
+            </div>
+            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <Button size="lg">View Collection</Button>
+              <Button variant="outline" size="lg">Learn More</Button>
+            </div>
           </div>
-          <div className="w-full md:w-1/2 space-y-6">
-            <h2 className="text-3xl font-bold">Medium length hero headline goes here</h2>
-            <p className="text-lg text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
-            </p>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
-              SHOP NOW
-            </Button>
+          <div className="mx-auto flex items-center justify-center">
+            <PlaceholderImage width={500} height={500} />
           </div>
         </div>
       </div>
     </section>
   )
 }
-

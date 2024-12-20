@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { PlaceholderImage } from '@/components/ui/placeholder-image'
 
 export function HeroSection() {
   return (
@@ -15,7 +16,7 @@ export function HeroSection() {
         <div className="flex gap-4">
           <Button
             asChild
-            className="bg-gradient-to-r from-pink-200 to-purple-300 text-purple-900 hover:from-pink-300 hover:to-purple-400"
+            className="bg-gradient-to-r from-primary/20 to-primary/30 text-primary hover:from-primary/30 hover:to-primary/40"
             size="lg"
           >
             <Link href="/shop">
@@ -25,16 +26,8 @@ export function HeroSection() {
         </div>
       </div>
       <div className="relative flex items-center justify-center">
-        <Image
-          src="/placeholder.svg?height=600&width=600"
-          alt="Colorful smartwatch with floral display"
-          width={600}
-          height={600}
-          className="object-contain"
-          priority
-        />
+        <PlaceholderImage width={600} height={600} />
       </div>
     </section>
   )
 }
-

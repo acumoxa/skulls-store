@@ -10,6 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 export function SiteHeader() {
   return (
@@ -74,12 +75,15 @@ export function SiteHeader() {
             <Button variant="ghost" size="icon">
               <ShoppingBag className="h-5 w-5" />
             </Button>
-            <Button variant="outline" asChild>
-              <Link href="/sign-in">Sign in</Link>
-            </Button>
-            <Button className="bg-purple-200 text-purple-900 hover:bg-purple-300" asChild>
-              <Link href="/register">Register</Link>
-            </Button>
+            <div className="flex items-center space-x-4">
+              <ThemeToggle />
+              <Button asChild variant="ghost">
+                <Link href="/sign-in">Sign in</Link>
+              </Button>
+              <Button className="bg-primary/10 text-primary hover:bg-primary/20" asChild>
+                <Link href="/register">Register</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -109,4 +113,3 @@ export function SiteHeader() {
     </header>
   )
 }
-

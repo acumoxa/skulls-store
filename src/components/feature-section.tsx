@@ -7,7 +7,7 @@ export function FeatureSection() {
     <section className="container py-16 md:py-24">
       <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
         <div className="relative aspect-square md:aspect-auto">
-          <div className="absolute inset-0 bg-gradient-to-br from-orange-400/20 via-pink-400/20 to-teal-400/20 rounded-3xl" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/20 to-primary/30 rounded-3xl" />
           <Image
             src="/placeholder.svg?height=600&width=600"
             alt="Smartwatch with colorful floral display"
@@ -32,7 +32,7 @@ export function FeatureSection() {
           <div className="mt-4">
             <Button
               asChild
-              className="bg-gradient-to-r from-purple-200 to-blue-200 text-purple-900 hover:from-purple-300 hover:to-blue-300"
+              className="bg-primary/10 text-primary hover:bg-primary/20"
             >
               <Link href="/learn-more">
                 Learn more
@@ -44,4 +44,3 @@ export function FeatureSection() {
     </section>
   )
 }
-

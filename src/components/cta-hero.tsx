@@ -30,7 +30,7 @@ export function CTAHero() {
           <Button
             asChild
             size="lg"
-            className="bg-purple-200 text-purple-900 hover:bg-purple-300"
+            className="bg-primary/20 text-white hover:bg-primary/30"
           >
             <Link href="/shop">
               SHOP NOW
@@ -41,4 +41,3 @@ export function CTAHero() {
     </section>
   )
 }
-

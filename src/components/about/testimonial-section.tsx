@@ -3,12 +3,12 @@ import { Star } from 'lucide-react'
 
 export function TestimonialSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-muted">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
           <div className="flex justify-center mb-6">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-6 h-6 fill-current text-yellow-400" />
+              <Star key={i} className="w-6 h-6 fill-current text-primary" />
             ))}
           </div>
           
@@ -28,10 +28,10 @@ export function TestimonialSection() {
                 />
                 <div className="text-left">
                   <div className="font-medium">Name Surname</div>
-                  <div className="text-sm text-gray-600">Position, Company name</div>
+                  <div className="text-sm text-muted-foreground">Position, Company name</div>
                 </div>
               </div>
-              <div className="w-px h-8 bg-gray-300 mx-4" />
+              <div className="w-px h-8 bg-border mx-4" />
               <Image
                 src="/placeholder.svg?height=24&width=100"
                 alt="Webflow logo"
@@ -46,4 +46,3 @@ export function TestimonialSection() {
     </section>
   )
 }
-

@@ -15,21 +15,21 @@ export function BenefitsSection() {
 
         <div className="grid gap-12 md:grid-cols-2">
           <div className="space-y-12">
-            <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-purple-200 before:to-pink-200">
+            <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-primary/20 before:to-primary/30">
               <h3 className="text-xl font-semibold">Highlight benefit one</h3>
               <p className="mt-2 text-muted-foreground">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
               </p>
             </div>
 
-            <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-purple-200 before:to-pink-200">
+            <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-primary/20 before:to-primary/30">
               <h3 className="text-xl font-semibold">Highlight benefit two</h3>
               <p className="mt-2 text-muted-foreground">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
               </p>
             </div>
 
-            <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-purple-200 before:to-pink-200">
+            <div className="relative pl-6 before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-primary/20 before:to-primary/30">
               <h3 className="text-xl font-semibold">Highlight benefit three</h3>
               <p className="mt-2 text-muted-foreground">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
@@ -38,13 +38,13 @@ export function BenefitsSection() {
           </div>
 
           <div className="relative aspect-square">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-400/20 via-pink-400/20 to-purple-400/20 rounded-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/20 to-primary/30 rounded-3xl" />
             <Image
-              src="/placeholder.svg?height=800&width=800"
-              alt="Colorful smartwatch with floral display"
-              width={800}
-              height={800}
-              className="relative z-10 object-contain p-6"
+              alt="Benefits"
+              className="absolute inset-0 h-full w-full object-cover rounded-3xl"
+              height={600}
+              src="/placeholder.svg"
+              width={600}
             />
           </div>
         </div>
@@ -52,4 +52,3 @@ export function BenefitsSection() {
     </section>
   )
 }
-
