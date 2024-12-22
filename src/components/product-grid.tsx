@@ -5,40 +5,40 @@ import Link from 'next/link'
 
 const products = [
   {
-    name: 'Luxe 2 series',
-    price: 23000,
+    name: 'Gothic Comfort Sweatshirt',
+    price: 4999,
     image: '/placeholder.svg?height=500&width=500',
-    colors: ['#FF69B4', '#1E1E1E']
+    colors: ['#1E1E1E', '#4A4A4A']
   },
   {
-    name: 'Luxe 2 series',
-    price: 23000,
+    name: 'Skull Pattern Blanket',
+    price: 7999,
     image: '/placeholder.svg?height=500&width=500',
-    colors: []
+    colors: ['#1E1E1E', '#800000']
   },
   {
-    name: 'Luxe 2 series',
-    price: 23000,
+    name: 'Skeleton Art Mug',
+    price: 2499,
     image: '/placeholder.svg?height=500&width=500',
-    colors: ['#00BCD4', '#1E1E1E']
+    colors: ['#1E1E1E', '#FFFFFF']
   },
   {
-    name: 'Luxe 2 series',
-    price: 23000,
+    name: 'Skull Society Sweater',
+    price: 5999,
     image: '/placeholder.svg?height=500&width=500',
-    colors: ['#FF69B4', '#1E1E1E']
+    colors: ['#1E1E1E', '#2B2B2B']
   },
   {
-    name: 'Luxe 2 series',
-    price: 23000,
+    name: 'Macabre Morning Mug',
+    price: 2499,
     image: '/placeholder.svg?height=500&width=500',
-    colors: []
+    colors: ['#1E1E1E', '#8B0000']
   },
   {
-    name: 'Luxe 2 series',
-    price: 23000,
+    name: 'Gothic Throw Blanket',
+    price: 6999,
     image: '/placeholder.svg?height=500&width=500',
-    colors: []
+    colors: ['#1E1E1E', '#363636']
   }
 ]
 
@@ -48,13 +48,13 @@ export function ProductGrid() {
       <div className="flex items-center gap-2 text-sm text-muted-foreground">
         <Link href="/">Home</Link>
         <span>-</span>
-        <Link href="/men">Men</Link>
+        <Link href="/products">Products</Link>
       </div>
       
       <div className="mt-4 flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold">Watches</h1>
-          <p className="mt-1 text-sm text-muted-foreground">09 products</p>
+          <h1 className="text-2xl font-bold">Products</h1>
+          <p className="mt-1 text-sm text-muted-foreground">06 products</p>
         </div>
         <Button variant="outline" className="gap-2">
           <SlidersHorizontal className="h-4 w-4" />
@@ -88,4 +88,3 @@ export function ProductGrid() {
     </div>
   )
 }
-

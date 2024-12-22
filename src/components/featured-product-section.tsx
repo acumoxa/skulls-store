@@ -9,10 +9,10 @@ export function FeaturedProductSection() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Featured Collection
+                Surround Yourself with Style
               </h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Explore our latest skull designs, handcrafted with precision and passion.
+                Our soft, premium blankets and home accessories bring gothic charm to any space while providing the comfort you crave. Each item combines bold designs with ultimate comfort, perfect for those who appreciate both style and coziness.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">

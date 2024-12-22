@@ -22,10 +22,10 @@ export function CTAHero() {
       <div className="container relative flex h-full items-center justify-center text-center">
         <div className="max-w-3xl space-y-6">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-            Medium length hero headline goes here
+            Find Your Perfect Piece
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-200">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+            From morning coffee in your skeleton-adorned mug to wrapping yourself in the comfort of our skull-patterned blankets, we're here for every moment of your day. Browse our collections and find the pieces that speak to your soul.
           </p>
           <Button
             asChild

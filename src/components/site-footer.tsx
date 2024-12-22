@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { Instagram, Dribbble, Twitter, Youtube, ArrowRight } from 'lucide-react'
+import { Facebook, ArrowRight } from 'lucide-react'
 
 export function SiteFooter() {
   return (
@@ -10,25 +10,13 @@ export function SiteFooter() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-serif">Luxe</h2>
-            <p className="text-sm text-muted-foreground">Copyright © 2021 Luxe</p>
+            <h2 className="text-2xl font-serif">We Dig Skulls</h2>
+            <p className="text-sm text-muted-foreground">Copyright 2024 We Dig Skulls</p>
             <p className="text-sm text-muted-foreground">All rights reserved</p>
             <div className="flex gap-4">
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Dribbble className="h-5 w-5" />
-                <span className="sr-only">Dribbble</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                <Youtube className="h-5 w-5" />
-                <span className="sr-only">YouTube</span>
+              <Link href="https://www.facebook.com/wedigskulls/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+                <Facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
               </Link>
             </div>
           </div>
@@ -43,11 +31,6 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground">
-                  Pricing
-                </Link>
-              </li>
-              <li>
                 <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground">
                   About us
                 </Link>
@@ -58,8 +41,8 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/testimonials" className="text-sm text-muted-foreground hover:text-foreground">
-                  Testimonials
+                <Link href="/shop" className="text-sm text-muted-foreground hover:text-foreground">
+                  Shop
                 </Link>
               </li>
             </ul>
@@ -99,11 +82,11 @@ export function SiteFooter() {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="h-10"
+                className="max-w-[300px]"
               />
-              <Button size="icon" className="h-10 w-10">
+              <Button variant="outline" size="icon">
                 <ArrowRight className="h-4 w-4" />
-                <span className="sr-only">Subscribe</span>
+                <span className="sr-only">Subscribe to newsletter</span>
               </Button>
             </div>
           </div>
@@ -112,4 +95,3 @@ export function SiteFooter() {
     </footer>
   )
 }
-

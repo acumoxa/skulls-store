@@ -20,13 +20,13 @@ export function FeatureSection() {
         <div className="flex flex-col gap-4">
           <div className="space-y-4">
             <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
-              Feature one
+              Premium Quality
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-              Describe benefit of feature one
+              Quality That Speaks
             </h2>
             <p className="text-lg text-muted-foreground">
-              Highlight Unique Selling Proposition (USP) with a short summary of the key feature and how it benefits customers.
+              Every item meets our high standards for both design and materials. Our carefully curated collection features skull and skeleton designs across comfortable sweatshirts, cozy sweaters, eye-catching mugs, and soft blankets.
             </p>
           </div>
           <div className="mt-4">

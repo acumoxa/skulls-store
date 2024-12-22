@@ -18,10 +18,10 @@ export function TryFreeForm() {
     <section className="container py-16 md:py-24">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-          Call to action that invites visitor to try the product for free
+          Join Our Skull Society Newsletter
         </h2>
         <p className="mt-4 text-lg text-muted-foreground">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+          Be the first to know about new skull designs, exclusive offers, and join a community that celebrates unique fashion choices. Get 10% off your first order when you sign up!
         </p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-4">
@@ -36,9 +36,9 @@ export function TryFreeForm() {
             />
             <Button 
               type="submit"
-              className="h-12 bg-gradient-to-r from-purple-200 to-blue-200 text-purple-900 hover:from-purple-300 hover:to-blue-300"
+              className="h-12 bg-gradient-to-r from-gray-800 to-gray-900 text-white hover:from-gray-700 hover:to-gray-800"
             >
-              Try it for free
+              Join Now
             </Button>
           </div>
           <p className="text-sm text-muted-foreground">
@@ -53,4 +53,3 @@ export function TryFreeForm() {
     </section>
   )
 }
-
